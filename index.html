@@ -41,7 +41,7 @@
         <main class="container pb-5">
             <div class="row">
                 <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="bg-light my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 215" class="bg-light my-3">
                         <g id="grafico"></g>
                     </svg>
                 </div>
@@ -80,7 +80,7 @@
                 { region: "Pueblo ignorado", poblacion:  67874 },
             ];
             censo.forEach(function (dato, i) {
-                document.querySelector("#grafico").innerHTML += '<g transform="translate(10, '+ 17 * (i + 1) +')"><rect x="0" y="0" width="'+ (dato.poblacion/25000) +'" height="10"></rect><text x="'+((dato.poblacion/25000)+5)+'" y="8" font-size="8">'+dato.region+'</text></g>';
+                document.querySelector("#grafico").innerHTML += '<g transform="translate(10, '+ 17 * (i + 1) +')"><rect x="0" y="0" width="'+ (dato.poblacion/5000) +'" height="10"></rect><text x="'+((dato.poblacion/5000)+5)+'" y="8" font-size="8">'+dato.region+'</text></g>';
             });
         </script>
     </body>
