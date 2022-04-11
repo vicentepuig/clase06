@@ -61,21 +61,17 @@
         <script>
             var censo = [
                 { region: "Mapuche", poblacion: 1745147 },
-                { region: "Tarapacá", poblacion: 330558 },
-                { region: "Antofagasta", poblacion: 607534 },
+                { region: "Aymara", poblacion: 156754 },
+                { region: "Rapa Nui", poblacion: 9399  },
                 { region: "Atacama", poblacion: 286168 },
-                { region: "Coquimbo", poblacion: 757586 },
-                { region: "Valparaíso", poblacion: 1815902 },
-                { region: "Metropolitana", poblacion: 7112808 },
-                { region: "O'Higgins", poblacion: 914555 },
-                { region: "Maule", poblacion: 1044950 },
-                { region: "Ñuble", poblacion: 480609 },
-                { region: "Biobío", poblacion: 1556805 },
-                { region: "La Araucanía", poblacion: 957224 },
-                { region: "Los Ríos", poblacion: 384837 },
-                { region: "Los Lagos", poblacion: 828708 },
-                { region: "Aysén", poblacion: 103158 },
-                { region: "Magallanes", poblacion: 166533 },
+                { region: "Lican Antai", poblacion: 30369 },
+                { region: "Quechua", poblacion: 33868 },
+                { region: "Colla", poblacion: 20744 },
+                { region: "Diaguita", poblacion: 88474 },
+                { region: "Kawésqar", poblacion: 3448  },
+                { region: "Yagán", poblacion: 1600 },
+                { region: "Otro", poblacion: 28115 },
+                { region: "Pueblo ignorado", poblacion:  67874 },
             ];
             censo.forEach(function (dato, i) {
                 document.querySelector("#grafico").innerHTML += '<g transform="translate(10, '+ 17 * (i + 1) +')"><rect x="0" y="0" width="'+ (dato.poblacion/25000) +'" height="10"></rect><text x="'+((dato.poblacion/25000)+5)+'" y="8" font-size="8">'+dato.region+'</text></g>';
